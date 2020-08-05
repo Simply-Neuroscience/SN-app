@@ -3,8 +3,8 @@ import React from "react";
 import { View } from "react-native";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
-import { NativeRouter, Switch, Route } from "react-router";
+import Navigator from "./app/routes/homeStack";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return <Navigator />;
 }
