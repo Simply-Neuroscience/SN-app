@@ -18,32 +18,36 @@ import colors from "../config/colors";
 function WelcomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.background}>
-      <TopBar></TopBar>
-      <Text style={styles.title}>Welcome to Simply Neuroscience</Text>
+      <TopBar navigation={navigation}></TopBar>
+      <Image
+        source={require("../assets/SNlogo.png")}
+        style={{ width: 200, height: 200 }}
+      />
+      {/* <Text style={styles.title}>Welcome to Simply Neuroscience</Text> */}
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate("SimplyNeurocon")}
         >
-          <Text>Simply Neurocon</Text>
+          <Text style={styles.buttonText}>Simply Neurocon</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate("Resources")}
         >
-          <Text>Explore our Resources</Text>
+          <Text style={styles.buttonText}>Explore our Resources</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate("Advice")}
         >
-          <Text>Annoymous Advice</Text>
+          <Text style={styles.buttonText}>Annoymous Advice</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate("About")}
         >
-          <Text>About Us</Text>
+          <Text style={styles.buttonText}>About Us</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -57,18 +61,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   buttonContainer: {
-    top: "10%",
-    height: "70%",
+    height: "60%",
     width: "80%",
     flexDirection: "column",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
   },
   button: {
     alignItems: "center",
-    backgroundColor: "#DDDDDD",
+    backgroundColor: colors.lightBlue,
     padding: "10%",
     width: "100%",
+    borderRadius: 20,
   },
+  buttonText: { color: colors.white, fontSize: 25 },
   title: {
     fontSize: 20,
     color: "black",
