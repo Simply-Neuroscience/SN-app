@@ -19,36 +19,45 @@ function WelcomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.background}>
       <TopBar navigation={navigation}></TopBar>
-      <Image
-        source={require("../assets/SNlogo.png")}
-        style={{ width: 200, height: 200 }}
-      />
-      {/* <Text style={styles.title}>Welcome to Simply Neuroscience</Text> */}
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate("SimplyNeurocon")}
-        >
-          <Text style={styles.buttonText}>Simply Neurocon</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate("Resources")}
-        >
-          <Text style={styles.buttonText}>Explore our Resources</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate("Advice")}
-        >
-          <Text style={styles.buttonText}>Annoymous Advice</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate("About")}
-        >
-          <Text style={styles.buttonText}>About Us</Text>
-        </TouchableOpacity>
+      <View style={styles.background}>
+        <Image
+          source={require("../assets/SNlogo.png")}
+          style={{ width: "60%", height: "40%" }}
+        />
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity
+            style={styles.buttonBox}
+            onPress={() => navigation.navigate("SimplyNeurocon")}
+          >
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Simply Neurocon</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Resources")}
+            style={styles.buttonBox}
+          >
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Explore our Resources</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Advice")}
+            style={styles.buttonBox}
+          >
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Annoymous Advice</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("About")}
+            style={{ height: "25%" }}
+          >
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>About Us</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -59,26 +68,27 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     alignItems: "center",
+    width: "100%",
   },
   buttonContainer: {
     height: "60%",
     width: "80%",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "center",
   },
   button: {
     alignItems: "center",
     backgroundColor: colors.lightBlue,
-    padding: "10%",
+    height: "80%",
     width: "100%",
     borderRadius: 20,
+    flexDirection: "column",
+    justifyContent: "center",
   },
-  buttonText: { color: colors.white, fontSize: 25 },
-  title: {
-    fontSize: 20,
-    color: "black",
-    top: "5%",
+  buttonBox: {
+    height: "25%",
   },
+  buttonText: { color: colors.white, fontSize: 20 },
 });
 
 export default WelcomeScreen;
