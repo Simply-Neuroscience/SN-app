@@ -128,6 +128,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     justifyContent: "center",
     alignItems: "center",
+    shadowOffset: { width: 4, height: 4 },
+    shadowColor: "black",
+    shadowOpacity: 0.25,
   },
 });
 
