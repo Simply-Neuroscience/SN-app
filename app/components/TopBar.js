@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
 import {
   TouchableHighlight,
   TouchableOpacity,
@@ -11,8 +11,8 @@ function TopBar({ navigation }) {
   return (
     <View style={styles.container}>
       <TouchableOpacity>
-        <Text style={{ fontSize: 25, color: colors.pink }}>
-          Enter our giveaway now!
+        <Text style={{ fontSize: 25, color: "white", fontWeight: "bold" }}>
+          enter our giveaway now!
         </Text>
       </TouchableOpacity>
     </View>
@@ -22,9 +22,13 @@ function TopBar({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     alignSelf: "stretch",
-    height: 52,
+    height: Dimensions.get("window").height * 0.07,
+    marginBottom: Dimensions.get("window").height * 0.03,
     flexDirection: "row", // row
-    backgroundColor: "dodgerblue",
+    backgroundColor: colors.lightBlue,
+    shadowOffset: { width: 4, height: 4 },
+    shadowColor: "black",
+    shadowOpacity: 0.25,
     alignItems: "center",
     justifyContent: "center", // center, space-around
     paddingLeft: 10,
