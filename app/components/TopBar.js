@@ -11,7 +11,7 @@ function TopBar({ navigation }) {
   return (
     <View style={styles.container}>
       <TouchableOpacity>
-        <Text style={{ fontSize: 25, color: "white", fontWeight: "bold" }}>
+        <Text style={{ fontSize: 25, color: "white", fontWeight: "bold", alignItems: "center"}}>
           enter our giveaway now!
         </Text>
       </TouchableOpacity>

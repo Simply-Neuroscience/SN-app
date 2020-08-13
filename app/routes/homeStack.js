@@ -6,6 +6,7 @@ import About from "../screens/About/index.js";
 import Advice from "../screens/Advice/index.js";
 import Resources from "../screens/Resources/index.js";
 import SimplyNeurocon from "../screens/SimplyNeurocon/index.js";
+import Register from "../screens/Register/index.js";
 import { StyleSheet, Dimensions } from "react-native";
 
 import colors from "../config/colors";
@@ -26,18 +27,22 @@ const styles = StyleSheet.create({
     fontSize: 20,
     //fontFamily: "Raleway",
     fontWeight: "bold",
+    alignItems: "center"
   },
   headerTitle2: {
     color: colors.white,
     fontSize: 20,
     //fontFamily: "Raleway",
     fontWeight: "bold",
+    alignItems: "center"
   },
   headerBackTitle1: {
     color: "black",
+    alignItems: "center"
   },
   headerBackTitle2: {
     color: colors.white,
+    alignItems: "center"
   },
 });
 
@@ -87,6 +92,16 @@ export default function MyStack() {
         <HomeStack.Screen
           name="SimplyNeurocon"
           component={SimplyNeurocon}
+          options={{
+            headerStyle: styles.header2,
+            headerTitleStyle: styles.headerTitle2,
+            headerBackTitleStyle: styles.headerBackTitle2,
+            title: "simply neurocon",
+          }}
+        />
+        <HomeStack.Screen
+          name="Register"
+          component={Register}
           options={{
             headerStyle: styles.header2,
             headerTitleStyle: styles.headerTitle2,
