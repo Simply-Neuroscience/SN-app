@@ -3,28 +3,26 @@ import { Text } from "native-base";
 import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking } from "react-native";
 import colors from "../../config/colors";
 
-function Register ({ navigation }){
+function Information ({ navigation }){
     return (
         <View style={{ alignItems: "center" }}>
-            <Text style={styles.mainText}>August 22 & 23 and 29 & 30, 2020</Text>
-            <TouchableOpacity
-              onPress={() => Linking.openURL("https://docs.google.com/forms/u/1/d/1jNUpoEs_HrAuCGIBBUZgmrNil4v0sBGIHxDLkIVQvwo/edit")}
-            >
-              <Image
-                source={require("../../assets/googleForms.png")}
-                style={styles.panel}
-              />
-              <Text style={styles.registerText}>Tap the icon to regsiter!</Text>
-            </TouchableOpacity>
+            <Text style={styles.mainText}>Thanks for registering!</Text>
+            <Image
+              source={require("../../assets/simplyneurocon.png")}
+              style={styles.panel}
+            />
+            <Image
+              source={require("../../assets/schedule.png")}
+              style={styles.schedule}
+            />
             <TouchableOpacity
               onPress={() => navigation.navigate("Information")}
               style={styles.buttonBox}
             >
               <View style={styles.button}>
-                <Text style={styles.buttonText}>Tap here for more about Simply Neurocon!</Text>
+                <Text style={styles.buttonText}>Tap for more information!</Text>
               </View>  
             </TouchableOpacity>
-            <Text style={styles.mainText2}>More information will be released as the event date approaches! </Text>
         </View>
     )
 };
@@ -34,31 +32,31 @@ let wWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   panel: {
-    height: Math.min(wWidth * 0.6, wHeight * 0.4),
-    width: Math.min(wWidth * 0.6, wHeight * 0.4),
+    height: Math.min(wWidth * 0.3, wHeight * 0.4),
+    width: Math.min(wWidth * 0.7, wHeight * 0.4),
     marginTop: wHeight * 0.02,
     marginBottom: wHeight * 0.01,
     alignItems: "center",
   },
   descBox: {
     height: wHeight * 0.44,
-    width: Math.min(wWidth * 0.9, wHeight * 0.4) * 0.95,
-    fontSize: 12,
-    color: colors.darkBlue,
-    fontWeight: "bold",
+    width: Math.min(wWidth * 1, wHeight * 0.4) * 0.95,
+  },
+  schedule: {
+    height: wHeight * 0.45,
+    width: wWidth * 0.9
   },
   desc: {
 
   },
   mainText: {
-    fontSize: 42,
+    fontSize: 34,
     color: colors.darkBlue,
     fontWeight: "bold",
     textAlign: "center",
     marginRight: "9%",
     marginLeft: "9%",
     marginTop: "7%",
-    marginBottom: "3%"
   },
   mainText2: {
     fontSize: 30,
@@ -86,13 +84,14 @@ const styles = StyleSheet.create({
     fontSize: 25,
     //fontFamily: "Raleway",
     fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "center",
+    marginLeft: "15%",
+    marginRight: "15%"
   },
   buttonBox: {
-    height: "13%",
+    height: "15%",
     marginTop: "6%",
-    width: "75%",
-    height: "20%"
+    width: "60%",
   },
   registerText: {
     fontSize: 15,
@@ -102,5 +101,5 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Register;
+export default Information;
 
