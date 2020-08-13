@@ -53,7 +53,7 @@ function WelcomeScreen({ navigation }) {
             </View>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate("About")}
+            onPress={() => navigation.navigate("about us")}
             style={styles.buttonBox}
           >
             <View style={styles.button2}>
