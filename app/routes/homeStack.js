@@ -19,6 +19,7 @@ import exec8 from "../screens/About/exec8.js";
 import exec9 from "../screens/About/exec9.js";
 import Register from "../screens/Register/index.js";
 import Information from "../screens/SimplyNeurocon/Information.js"
+import MoreInformation from "../screens/SimplyNeurocon/MoreInformation.js"
 
 import colors from "../config/colors";
 
@@ -123,6 +124,16 @@ export default function MyStack() {
         <HomeStack.Screen
           name="Information"
           component={Information}
+          options={{
+            headerStyle: styles.header2,
+            headerTitleStyle: styles.headerTitle2,
+            headerBackTitleStyle: styles.headerBackTitle2,
+            title: "simply neurocon",
+          }}
+        />
+        <HomeStack.Screen
+          name="MoreInformation"
+          component={MoreInformation}
           options={{
             headerStyle: styles.header2,
             headerTitleStyle: styles.headerTitle2,

@@ -3,26 +3,21 @@ import { Text } from "native-base";
 import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking } from "react-native";
 import colors from "../../config/colors";
 
-function Information ({ navigation }){
+function MoreInformation ({ navigation }){
     return (
         <View style={{ alignItems: "center" }}>
-            <Text style={styles.mainText}>Thanks for registering!</Text>
             <Image
-              source={require("../../assets/simplyneurocon.png")}
-              style={styles.panel}
-            />
-            <Image
-              source={require("../../assets/schedule.png")}
+              source={require("../../assets/meetspeakers.png")}
               style={styles.schedule}
             />
-            <TouchableOpacity
-              onPress={() => navigation.navigate("MoreInformation")}
-              style={styles.buttonBox}
-            >
-              <View style={styles.button}>
-                <Text style={styles.buttonText}>Tap for more information!</Text>
-              </View>  
-            </TouchableOpacity>
+            <Image
+              source={require("../../assets/faq.png")}
+              style={styles.schedule2}
+            />
+            <Image
+              source={require("../../assets/ourcollaborators.png")}
+              style={styles.schedule3}
+            />
         </View>
     )
 };
@@ -31,20 +26,24 @@ let wHeight = Dimensions.get("window").height;
 let wWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
-  panel: {
-    height: Math.min(wWidth * 0.3, wHeight * 0.4),
-    width: Math.min(wWidth * 0.7, wHeight * 0.4),
-    marginTop: wHeight * 0.02,
-    marginBottom: wHeight * 0.01,
-    alignItems: "center",
-  },
   descBox: {
     height: wHeight * 0.44,
     width: Math.min(wWidth * 1, wHeight * 0.4) * 0.95,
   },
   schedule: {
-    height: wHeight * 0.45,
-    width: wWidth * 0.9
+    height: wHeight * 0.34,
+    width: wWidth * 0.9,
+    marginBottom: "4%", 
+    marginTop: "5%"
+  },
+  schedule2: {
+    height: wHeight * 0.32,
+    width: wWidth * 0.9,
+    marginBottom: "3%"
+  },
+  schedule3: {
+    height: wHeight * 0.15,
+    width: wWidth * 0.8
   },
   desc: {
 
@@ -101,5 +100,5 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Information;
+export default MoreInformation;
 
