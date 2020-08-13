@@ -5,7 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Home from "../screens/WelcomeScreen.js";
 import About from "../screens/About/index.js";
 import Advice from "../screens/Advice/index.js";
-import Resources from "../screens/Resources/index.js";
+import Resources from "../screens/Resources/Explore.js";
 import SimplyNeurocon from "../screens/SimplyNeurocon/index.js";
 import aboutHome from "../screens/About/aboutHome.js";
 import exec1 from "../screens/About/exec1.js";
