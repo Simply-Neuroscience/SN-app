@@ -17,6 +17,7 @@ import exec6 from "../screens/About/exec6.js";
 import exec7 from "../screens/About/exec7.js";
 import exec8 from "../screens/About/exec8.js";
 import exec9 from "../screens/About/exec9.js";
+import Register from "../screens/Register/index.js";
 
 import colors from "../config/colors";
 
@@ -36,18 +37,22 @@ const styles = StyleSheet.create({
     fontSize: 20,
     //fontFamily: "Raleway",
     fontWeight: "bold",
+    alignItems: "center",
   },
   headerTitle2: {
     color: colors.white,
     fontSize: 20,
     //fontFamily: "Raleway",
     fontWeight: "bold",
+    alignItems: "center",
   },
   headerBackTitle1: {
     color: "black",
+    alignItems: "center",
   },
   headerBackTitle2: {
     color: colors.white,
+    alignItems: "center",
   },
 });
 
@@ -201,6 +206,16 @@ export default function MyStack() {
             headerTitleStyle: styles.headerTitle1,
             headerBackTitleStyle: styles.headerBackTitle1,
             title: "about us",
+          }}
+        />
+        <HomeStack.Screen
+          name="Register"
+          component={Register}
+          options={{
+            headerStyle: styles.header2,
+            headerTitleStyle: styles.headerTitle2,
+            headerBackTitleStyle: styles.headerBackTitle2,
+            title: "simply neurocon",
           }}
         />
       </HomeStack.Navigator>

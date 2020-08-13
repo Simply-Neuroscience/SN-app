@@ -2,28 +2,12 @@ import React from "react";
 import { Text } from "native-base";
 import { StyleSheet, Image, View, Dimensions, TouchableOpacity } from "react-native";
 import colors from "../../config/colors";
+import HTMLView from 'react-native-htmlview'
 
-
-function SimplyNeurocon({ navigation }){
+function Register ({ navigation }){
   return (
     <View style={{ alignItems: "center" }}>
-      <TouchableOpacity
-        onPress={() => navigation.navigate("Register")}
-        style={styles.buttonBox}
-      >
-        <View style={styles.button}>
-          <Text style={styles.buttonText}>register here!</Text>
-        </View>
-      </TouchableOpacity>
-      <Text style={styles.mainText}>August 22 & 23 and 29 & 30, 2020</Text>
-      <Image
-        source={require("../../assets/snconfpost.jpg")}
-        style={styles.panel}
-      />
-      <Image
-        source={require("../../assets/snconfpost2.jpg")}
-        style={styles.panel}
-      />
+        <Text>Register</Text>
     </View>
   )
 };
@@ -80,4 +64,5 @@ const styles = StyleSheet.create({
   }
 });
 
-export default SimplyNeurocon;
+export default Register;
+
