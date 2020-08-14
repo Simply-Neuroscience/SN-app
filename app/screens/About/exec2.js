@@ -7,52 +7,62 @@ import colors from "../../config/colors";
 export default () => {
   return (
     <View style={{ height: "100%", backgroundColor: colors.darkBlue }}>
-      <View style={styles.sectionBox}>
-        <View>
-          <Image
-            source={require("../../assets/SNlogo.png")}
-            style={styles.profileImg}
-          />
+      <Text style={styles.oneline}>meet the executive team</Text>
+      <View style={styles.insideBox}>
+        <View style={styles.sectionBox}>
+          <View>
+            <Image
+              source={require("../../assets/jed.png")}
+              style={styles.profileImg}
+            />
+          </View>
+          <View style={styles.profileDesc}>
+            <Text style={styles.name}>Jed Quiaoit</Text>
+            <Text style={styles.title}>Founder | Chief Executive Officer</Text>
+          </View>
         </View>
-        <View style={styles.profileDesc}>
-          <Text style={styles.name}>Chinmayi Balusu</Text>
-          <Text style={styles.title}>Founder | Chief Executive Officer</Text>
+        <View style={styles.sectionBox}>
+          <View>
+            <Image
+              source={require("../../assets/sheima.png")}
+              style={styles.profileImg}
+            />
+          </View>
+          <View style={styles.profileDesc}>
+            <Text style={styles.name}>Sheima Bana</Text>
+            <Text style={styles.title}>
+              Secretary | Co-Director of Awareness Content Creation
+            </Text>
+          </View>
         </View>
-      </View>
-      <View style={styles.sectionBox}>
-        <View>
-          <Image
-            source={require("../../assets/SNlogo.png")}
-            style={styles.profileImg}
-          />
+        <View style={styles.sectionBox}>
+          <View>
+            <Image
+              source={require("../../assets/sarah.png")}
+              style={styles.profileImg}
+            />
+          </View>
+          <View style={styles.profileDesc}>
+            <Text style={styles.name}>Sarah Mirsaidi</Text>
+            <Text style={styles.title}>
+              Co-Director of Awareness Content Creation
+            </Text>
+          </View>
         </View>
-        <View style={styles.profileDesc}>
-          <Text style={styles.name}>Chinmayi Balusu</Text>
-          <Text style={styles.title}>Founder | Chief Executive Officer</Text>
-        </View>
-      </View>
-      <View style={styles.sectionBox}>
-        <View>
-          <Image
-            source={require("../../assets/SNlogo.png")}
-            style={styles.profileImg}
-          />
-        </View>
-        <View style={styles.profileDesc}>
-          <Text style={styles.name}>Chinmayi Balusu</Text>
-          <Text style={styles.title}>Founder | Chief Executive Officer</Text>
-        </View>
-      </View>
-      <View style={styles.sectionBox}>
-        <View>
-          <Image
-            source={require("../../assets/SNlogo.png")}
-            style={styles.profileImg}
-          />
-        </View>
-        <View style={styles.profileDesc}>
-          <Text style={styles.name}>Chinmayi Balusu</Text>
-          <Text style={styles.title}>Founder | Chief Executive Officer</Text>
+        <View style={styles.sectionBox}>
+          <View>
+            <Image
+              source={require("../../assets/sasha.png")}
+              style={styles.profileImg}
+            />
+          </View>
+          <View style={styles.profileDesc}>
+            <Text style={styles.name}>Sasha Tunsiricharoengul</Text>
+            <Text style={styles.title}>
+              Co-Director of Outreach & Research | Co-Lead of Presynaptic
+              Project
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -67,7 +77,12 @@ const styles = StyleSheet.create({
     marginBottom: "1.5%",
     flexDirection: "row",
   },
-  profileImg: { aspectRatio: 1, height: "100%" },
+  profileImg: {
+    aspectRatio: 1,
+    height: "90%",
+    marginLeft: "10%",
+    marginRight: "0%",
+  },
   profileDesc: { flexGrow: 1, flex: 1, justifyContent: "center" },
   name: {
     fontSize: 18,
@@ -76,4 +91,17 @@ const styles = StyleSheet.create({
     marginBottom: "3%",
   },
   title: { fontSize: 16, color: colors.white },
+  insideBox: {
+    marginTop: "3%",
+    height: "95%",
+    backgroundColor: colors.darkBlue,
+    width: "95%",
+  },
+  oneline: {
+    fontSize: 15,
+    textAlign: "center",
+    color: colors.white,
+    fontWeight: "bold",
+    marginTop: "5%",
+  },
 });

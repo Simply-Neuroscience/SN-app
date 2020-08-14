@@ -25,7 +25,7 @@ export default ({ navigation }) => {
         </Text>
       </View>
       <View style={styles.line2} />
-      <Text style={styles.oneline}>meet the executive team</Text>
+      <Text style={styles.oneline}>meet the leadership team</Text>
       <View style={styles.buttonrows}>
         <View style={styles.buttonrow}>
           <TouchableOpacity
