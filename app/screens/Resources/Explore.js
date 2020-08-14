@@ -30,14 +30,14 @@ function Explore({ navigation }) {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.buttonBox}
-            onPress={() => navigation.navigate("SimplyNeurocon")}
+            onPress={() => navigation.navigate("BSR")}
           >
             <View style={styles.button1}>
               <Text style={styles.buttonText1}>brain study resources</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate("Resources")}
+            onPress={() => navigation.navigate("LPW")}
             style={styles.buttonBox}
           >
             <View style={styles.button2}>
@@ -45,7 +45,7 @@ function Explore({ navigation }) {
             </View>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate("Advice")}
+            onPress={() => navigation.navigate("WWR")}
             style={styles.buttonBox}
           >
             <View style={styles.button1}>
@@ -53,7 +53,7 @@ function Explore({ navigation }) {
             </View>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate("about us")}
+            onPress={() => navigation.navigate("SCR")}
             style={styles.buttonBox}
           >
             <View style={styles.button2}>

@@ -18,8 +18,12 @@ import exec7 from "../screens/About/exec7.js";
 import exec8 from "../screens/About/exec8.js";
 import exec9 from "../screens/About/exec9.js";
 import Register from "../screens/Register/index.js";
-import Information from "../screens/SimplyNeurocon/Information.js"
-import MoreInformation from "../screens/SimplyNeurocon/MoreInformation.js"
+import Information from "../screens/SimplyNeurocon/Information.js";
+import MoreInformation from "../screens/SimplyNeurocon/MoreInformation.js";
+import BSR from "../screens/Resources/BSR.js";
+import LPW from "../screens/Resources/LPW.js";
+import SCR from "../screens/Resources/SCR.js";
+import WWR from "../screens/Resources/WWR.js";
 
 import colors from "../config/colors";
 
@@ -94,6 +98,46 @@ export default function MyStack() {
         <HomeStack.Screen
           name="Resources"
           component={Resources}
+          options={{
+            headerStyle: styles.header1,
+            headerTitleStyle: styles.headerTitle1,
+            headerBackTitleStyle: styles.headerBackTitle1,
+            title: "explore our resources",
+          }}
+        />
+        <HomeStack.Screen
+          name="BSR"
+          component={BSR}
+          options={{
+            headerStyle: styles.header1,
+            headerTitleStyle: styles.headerTitle1,
+            headerBackTitleStyle: styles.headerBackTitle1,
+            title: "explore our resources",
+          }}
+        />
+        <HomeStack.Screen
+          name="LPW"
+          component={LPW}
+          options={{
+            headerStyle: styles.header1,
+            headerTitleStyle: styles.headerTitle1,
+            headerBackTitleStyle: styles.headerBackTitle1,
+            title: "explore our resources",
+          }}
+        />
+        <HomeStack.Screen
+          name="WWR"
+          component={WWR}
+          options={{
+            headerStyle: styles.header1,
+            headerTitleStyle: styles.headerTitle1,
+            headerBackTitleStyle: styles.headerBackTitle1,
+            title: "explore our resources",
+          }}
+        />
+        <HomeStack.Screen
+          name="SCR"
+          component={SCR}
           options={{
             headerStyle: styles.header1,
             headerTitleStyle: styles.headerTitle1,
