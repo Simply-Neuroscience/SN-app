@@ -7,7 +7,7 @@ import colors from "../../config/colors";
 export default () => {
   return (
     <View style={{ height: "100%", backgroundColor: colors.darkBlue }}>
-      <Text style={styles.oneline}>meet the advisory board</Text>
+      <Text style={styles.oneline}>meet the advisory board (8/9)</Text>
       <View style={styles.insideBox}>
         <View style={styles.sectionBox}>
           <View>
