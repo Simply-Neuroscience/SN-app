@@ -54,10 +54,7 @@ export default () => {
           </View>
           <View style={styles.profileDesc}>
             <Text style={styles.name}>Dr. Caroline Johnson</Text>
-            <Text style={styles.title}>
-              President | Board Chair | Director of Legislation | Co-Director of
-              Human Resources
-            </Text>
+            <Text style={styles.title}></Text>
           </View>
         </View>
         <View style={styles.sectionBox}>
@@ -69,10 +66,7 @@ export default () => {
           </View>
           <View style={styles.profileDesc}>
             <Text style={styles.name}>Sara Gordillo Sampedro</Text>
-            <Text style={styles.title}>
-              Vice President | Board Vice Chair | Co-Director of Brain Resource
-              Creation | Co-Lead of the Presynaptic Project/The Visual Cortex
-            </Text>
+            <Text style={styles.title}></Text>
           </View>
         </View>
       </View>

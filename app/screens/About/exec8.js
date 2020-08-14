@@ -18,7 +18,7 @@ export default () => {
           </View>
           <View style={styles.profileDesc}>
             <Text style={styles.name}>Rui Zhong</Text>
-            <Text style={styles.title}>Founder | Chief Executive Officer</Text>
+            <Text style={styles.title}></Text>
           </View>
         </View>
         <View style={styles.sectionBox}>
@@ -30,9 +30,7 @@ export default () => {
           </View>
           <View style={styles.profileDesc}>
             <Text style={styles.name}>Richard Holman Matanta</Text>
-            <Text style={styles.title}>
-              Chief Operating Officer | Co-Director of Outreach and Research
-            </Text>
+            <Text style={styles.title}></Text>
           </View>
         </View>
         <View style={styles.sectionBox}>
@@ -44,10 +42,7 @@ export default () => {
           </View>
           <View style={styles.profileDesc}>
             <Text style={styles.name}>Hajer Karoui</Text>
-            <Text style={styles.title}>
-              President | Board Chair | Director of Legislation | Co-Director of
-              Human Resources
-            </Text>
+            <Text style={styles.title}></Text>
           </View>
         </View>
       </View>
