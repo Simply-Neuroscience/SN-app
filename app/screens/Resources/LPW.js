@@ -8,10 +8,15 @@ function LPW(){
     <View style={{ height: "100%", backgroundColor: colors.darkBlue }}>
       <ScrollView>
         <Text style={styles.titleText}>lesson plans/workshops</Text>
-        <Image
-          source={require("../../assets/aboutBRC.png")}
-          style={styles.schedule}
-        />
+        <TouchableOpacity
+          onPress={() => Linking.openURL("https://www.simplyneuroscience.org/ggsxsn-lesson-plans")}
+        >
+          <Image
+            source={require("../../assets/psp.png")}
+            style={styles.schedule}
+          />          
+        </TouchableOpacity>
+
         <Image
           source={require("../../assets/ultimateguide.png")}
           style={styles.schedule2}
@@ -35,7 +40,7 @@ const styles = StyleSheet.create({
     width: Math.min(wWidth * 1, wHeight * 0.4) * 0.95,
   },
   schedule: {
-    height: wHeight * 0.18,
+    height: wHeight * 0.21,
     width: wWidth * 0.9,
     marginBottom: "4%", 
     marginTop: "4%",
