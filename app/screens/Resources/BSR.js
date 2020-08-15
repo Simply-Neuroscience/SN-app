@@ -1,24 +1,26 @@
 import React from "react";
 import { Text } from "native-base";
-import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking } from "react-native";
+import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking, ScrollView } from "react-native";
 import colors from "../../config/colors";
 
 function BSR(){
   return (
     <View style={{ height: "100%", backgroundColor: colors.darkBlue }}>
-      <Text style={styles.titleText}>brain study resources</Text>
-      <Image
-        source={require("../../assets/psp.png")}
-        style={styles.schedule}
-      />
-      <Image
-        source={require("../../assets/brainbuilding.png")}
-        style={styles.schedule2}
-      />
-      <Image
-        source={require("../../assets/brainbuildinginfo.png")}
-        style={styles.schedule3}
-      />
+      <ScrollView style={styles.scrollView}>
+        <Text style={styles.titleText}>brain study resources</Text>
+        <Image
+          source={require("../../assets/psp.png")}
+          style={styles.schedule}
+        />
+        <Image
+          source={require("../../assets/brainbuilding.png")}
+          style={styles.schedule2}
+        />
+        <Image
+          source={require("../../assets/brainbuildinginfo.png")}
+          style={styles.schedule3}
+        />
+      </ScrollView>
     </View>
   )
 };
@@ -48,6 +50,7 @@ const styles = StyleSheet.create({
     height: wHeight * 0.3,
     width: wWidth * 0.9,
     alignSelf: "center",
+    marginBottom: "10%"
   },
   titleText: {
     color: "white",
@@ -55,6 +58,9 @@ const styles = StyleSheet.create({
     fontSize: 28,
     textAlign: "center",
     marginTop: "4%"
+  }, 
+  scrollView: {
+    marginHorizontal: 20,
   }
 });
 
