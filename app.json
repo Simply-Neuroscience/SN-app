@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
     "splash": {
-      "image": "./app/assets/bobby.png",
+      "image": "./app/assets/SAi.png",
       "resizeMode": "contain",
       "backgroundColor": "#075F63",
     },

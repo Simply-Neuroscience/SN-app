@@ -8,10 +8,15 @@ function WWR(){
     <View style={{ height: "100%", backgroundColor: colors.darkBlue }}>
       <ScrollView style={styles.scrollView}>
         <Text style={styles.titleText}>wellness week resources</Text>
-        <Image
-          source={require("../../assets/aboutWWR.png")}
-          style={styles.schedule}
-        />
+        <TouchableOpacity
+          onPress={() => Linking.openURL("https://www.simplyneuroscience.org/wellness-week-resources")}
+        >
+          <Image
+            source={require("../../assets/aboutWWR.png")}
+            style={styles.schedule}
+          />          
+        </TouchableOpacity>
+
         <Text style={styles.subtitle}>Guide to Starting Your Own Wellness Week Intiative</Text>
         <Image
           source={require("../../assets/howtostart.png")}

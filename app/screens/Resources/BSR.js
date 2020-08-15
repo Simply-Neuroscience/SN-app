@@ -8,10 +8,15 @@ function BSR(){
     <View style={{ height: "100%", backgroundColor: colors.darkBlue }}>
       <ScrollView style={styles.scrollView}>
         <Text style={styles.titleText}>brain study resources</Text>
-        <Image
-          source={require("../../assets/psp.png")}
-          style={styles.schedule}
-        />
+        <TouchableOpacity
+          onPress={() => Linking.openURL("https://www.simplyneuroscience.org/brain-bee-study-resources")}
+        >
+          <Image
+            source={require("../../assets/quizlet.png")}
+            style={styles.schedule}
+          />
+        </TouchableOpacity>
+
         <Image
           source={require("../../assets/brainbuilding.png")}
           style={styles.schedule2}
@@ -34,7 +39,7 @@ const styles = StyleSheet.create({
     width: Math.min(wWidth * 1, wHeight * 0.4) * 0.95,
   },
   schedule: {
-    height: wHeight * 0.2,
+    height: wHeight * 0.18,
     width: wWidth * 0.9,
     marginBottom: "4%", 
     marginTop: "4%",
