@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
     width: Math.min(wWidth * 1, wHeight * 0.4) * 0.95,
   },
   schedule: {
-    height: wHeight * 0.25,
-    width: wWidth * 0.85,
+    height: wHeight * 0.24,
+    width: wWidth * 0.9,
     marginBottom: "2%", 
     marginTop: "4%",
     alignSelf: "center",

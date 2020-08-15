@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   buttonBox: {
     height: "10%",
     marginTop: "6%",
-    width: "75%",
+    width: "80%",
     alignSelf: "center"
   },
 });
