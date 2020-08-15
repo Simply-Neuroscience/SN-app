@@ -7,7 +7,7 @@ export default () => {
   return (
     <View style={{ alignItems: "center" }}>
       <Image
-        source={require("../../assets/questionspanel.png")}
+        source={require("../../assets/questionspanel.jpg")}
         style={styles.panel}
       />
       <Text style={styles.descBox}>
