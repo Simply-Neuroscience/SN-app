@@ -1,31 +1,31 @@
 import React from "react";
 import { Text } from "native-base";
-import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking } from "react-native";
+import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking, ScrollView } from "react-native";
 import colors from "../../config/colors";
 
 function Register ({ navigation }){
     return (
-        <View style={{ alignItems: "center" }}>
-            <Text style={styles.mainText}>August 22 & 23 and 29 & 30, 2020</Text>
-            <TouchableOpacity
-              onPress={() => Linking.openURL("https://docs.google.com/forms/u/1/d/1jNUpoEs_HrAuCGIBBUZgmrNil4v0sBGIHxDLkIVQvwo/edit")}
-            >
-              <Image
-                source={require("../../assets/googleForms.png")}
-                style={styles.panel}
-              />
-              <Text style={styles.registerText}>Tap the icon to regsiter!</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => navigation.navigate("Information")}
-              style={styles.buttonBox}
-            >
-              <View style={styles.button}>
-                <Text style={styles.buttonText}>Tap here for more about Simply Neurocon!</Text>
-              </View>  
-            </TouchableOpacity>
-            <Text style={styles.mainText2}>More information will be released as the event date approaches! </Text>
-        </View>
+      <View style={{ alignItems: "center" }}>
+        <Text style={styles.mainText}>August 22 & 23 and 29 & 30, 2020</Text>
+        <TouchableOpacity
+          onPress={() => Linking.openURL("https://docs.google.com/forms/u/1/d/1jNUpoEs_HrAuCGIBBUZgmrNil4v0sBGIHxDLkIVQvwo/edit")}
+        >
+          <Image
+            source={require("../../assets/googleForms.png")}
+            style={styles.panel}
+          />
+          <Text style={styles.registerText}>Tap the icon to regsiter!</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Information")}
+          style={styles.buttonBox}
+        >
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>Tap here for more about Simply Neurocon!</Text>
+          </View>  
+        </TouchableOpacity>
+        <Text style={styles.mainText2}>More information will be released as the event date approaches! </Text>            
+      </View>
     )
 };
 
@@ -99,6 +99,9 @@ const styles = StyleSheet.create({
     //fontFamily: "Raleway",
     fontWeight: "bold",
     textAlign: "center"
+  }, 
+  scrollView: {
+    marginHorizontal: 20
   }
 });
 

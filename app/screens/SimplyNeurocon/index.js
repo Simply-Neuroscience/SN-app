@@ -1,29 +1,32 @@
 import React from "react";
 import { Text } from "native-base";
-import { StyleSheet, Image, View, Dimensions, TouchableOpacity } from "react-native";
+import { StyleSheet, Image, View, Dimensions, TouchableOpacity, ScrollView } from "react-native";
 import colors from "../../config/colors";
 
 
 function SimplyNeurocon({ navigation }){
   return (
     <View style={{ alignItems: "center" }}>
-      <TouchableOpacity
-        onPress={() => navigation.navigate("Register")}
-        style={styles.buttonBox}
-      >
-        <View style={styles.button}>
-          <Text style={styles.buttonText}>register here!</Text>
-        </View>
-      </TouchableOpacity>
-      <Text style={styles.mainText}>August 22 & 23 and 29 & 30, 2020</Text>
-      <Image
-        source={require("../../assets/snconfpost.jpg")}
-        style={styles.panel}
-      />
-      <Image
-        source={require("../../assets/snconfpost2.jpg")}
-        style={styles.panel}
-      />
+      <ScrollView style={styles.scrollView}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Register")}
+          style={styles.buttonBox}
+        >
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>register here!</Text>
+          </View>
+        </TouchableOpacity>
+        <Text style={styles.mainText}>August 22 & 23 and 29 & 30, 2020</Text>
+        <Image
+          source={require("../../assets/snconfpost.jpg")}
+          style={styles.panel}
+        />
+        <Image
+          source={require("../../assets/snconfpost2.jpg")}
+          style={styles.panel}
+        />
+      </ScrollView>
+
     </View>
   )
 };
@@ -38,6 +41,7 @@ const styles = StyleSheet.create({
     marginTop: wHeight * 0.02,
     marginBottom: wHeight * 0.01,
     alignItems: "center",
+    alignSelf: "center"
   },
   descBox: {
     height: wHeight * 0.44,
@@ -65,6 +69,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     flexDirection: "column",
     justifyContent: "center",
+    alignSelf: "center"
   },
   buttonText: {
     color: colors.white,
@@ -76,7 +81,11 @@ const styles = StyleSheet.create({
     height: "13%",
     marginTop: "7%",
     paddingBottom: "3%",
-    width: "50%"
+    width: "50%",
+    alignSelf: "center"
+  }, 
+  scrollView: {
+    marginHorizontal: 20
   }
 });
 

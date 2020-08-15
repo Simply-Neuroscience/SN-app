@@ -1,28 +1,30 @@
 import React from "react";
 import { Text } from "native-base";
-import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking } from "react-native";
+import { StyleSheet, Image, View, Dimensions, TouchableOpacity, Linking, ScrollView } from "react-native";
 import colors from "../../config/colors";
 
 function Information ({ navigation }){
     return (
-        <View style={{ alignItems: "center" }}>
-            <Text style={styles.mainText}>Thanks for registering!</Text>
-            <Image
-              source={require("../../assets/simplyneurocon.png")}
-              style={styles.panel}
-            />
-            <Image
-              source={require("../../assets/schedule.png")}
-              style={styles.schedule}
-            />
-            <TouchableOpacity
-              onPress={() => navigation.navigate("MoreInformation")}
-              style={styles.buttonBox}
-            >
-              <View style={styles.button}>
-                <Text style={styles.buttonText}>Tap for more information!</Text>
-              </View>  
-            </TouchableOpacity>
+        <View style={{ height: "100%", alignItems: "center" }}>
+          <ScrollView style={styles.scrollView}>
+              <Text style={styles.mainText}>Thanks for registering!</Text>
+              <Image
+                source={require("../../assets/simplyneurocon.png")}
+                style={styles.panel}
+              />
+              <Image
+                source={require("../../assets/schedule.png")}
+                style={styles.schedule}
+              />
+              <TouchableOpacity
+                onPress={() => navigation.navigate("MoreInformation")}
+                style={styles.buttonBox}
+              >
+                <View style={styles.button}>
+                  <Text style={styles.buttonText}>Tap for more information!</Text>
+                </View>  
+              </TouchableOpacity>            
+          </ScrollView>
         </View>
     )
 };
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
     marginTop: wHeight * 0.02,
     marginBottom: wHeight * 0.01,
     alignItems: "center",
+    alignSelf: "center"
   },
   descBox: {
     height: wHeight * 0.44,
@@ -78,6 +81,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     flexDirection: "column",
     justifyContent: "center",
+    alignSelf: "center"
   },
   buttonText: {
     color: colors.white,
@@ -86,18 +90,24 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     marginLeft: "15%",
-    marginRight: "15%"
+    marginRight: "15%",
+    alignSelf: "center"
   },
   buttonBox: {
     height: "15%",
     marginTop: "6%",
     width: "60%",
+    marginBottom: "15%",
+    alignSelf: "center"
   },
   registerText: {
     fontSize: 15,
     //fontFamily: "Raleway",
     fontWeight: "bold",
     textAlign: "center"
+  },
+  scrollView: {
+    marginHorizontal: 20
   }
 });
 
