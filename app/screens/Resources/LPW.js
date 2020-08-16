@@ -16,13 +16,12 @@ function LPW(){
             style={styles.schedule}
           />          
         </TouchableOpacity>
-
         <Image
-          source={require("../../assets/ultimateguide.png")}
+          source={require("../../assets/brainbuilding.png")}
           style={styles.schedule2}
         />
         <Image
-          source={require("../../assets/quiz.png")}
+          source={require("../../assets/brainbuildinginfo.png")}
           style={styles.schedule3}
         />
       </ScrollView>

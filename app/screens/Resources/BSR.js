@@ -16,13 +16,12 @@ function BSR(){
             style={styles.schedule}
           />
         </TouchableOpacity>
-
         <Image
-          source={require("../../assets/brainbuilding.png")}
+          source={require("../../assets/ultimateguide.png")}
           style={styles.schedule2}
         />
         <Image
-          source={require("../../assets/brainbuildinginfo.png")}
+          source={require("../../assets/quiz.png")}
           style={styles.schedule3}
         />
       </ScrollView>
