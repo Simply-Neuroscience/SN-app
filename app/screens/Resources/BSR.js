@@ -12,19 +12,19 @@ function BSR(){
           onPress={() => Linking.openURL("https://www.simplyneuroscience.org/brain-bee-study-resources")}
         >
           <Image
-            source={require("../../assets/quizlet.png")}
+            source={require("../../assets/psp.png")}
             style={styles.schedule}
 						resizeMode="contain"
           />
         </TouchableOpacity>
 
         <Image
-          source={require("../../assets/brainbuilding.png")}
+          source={require("../../assets/ultimateguide.png")}
           style={styles.schedule2}
 					resizeMode="contain"
         />
         <Image
-          source={require("../../assets/brainbuildinginfo.png")}
+          source={require("../../assets/quiz.png")}
           style={styles.schedule3}
 					resizeMode="contain"
         />
