@@ -10,12 +10,10 @@ function SCR(){
       <Image
         source={require("../../assets/whatissc.png")}
         style={styles.schedule}
-				resizeMode="contain"
       />
       <Image
         source={require("../../assets/crispr.png")}
         style={styles.schedule2}
-				resizeMode="contain"
       />
       <TouchableOpacity
         onPress={() => Linking.openURL("https://www.instagram.com/thevisualcortexofficial/")}

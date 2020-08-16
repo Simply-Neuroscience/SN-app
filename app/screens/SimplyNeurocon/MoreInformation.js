@@ -13,7 +13,6 @@ function MoreInformation ({ navigation }){
             <Image
               source={require("../../assets/faq.png")}
               style={styles.schedule2}
-							resizeMode="contain"
             />
             <Image
               source={require("../../assets/ourcollaborators.png")}
