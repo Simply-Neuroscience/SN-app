@@ -14,16 +14,19 @@ function BSR(){
           <Image
             source={require("../../assets/quizlet.png")}
             style={styles.schedule}
+						resizeMode="contain"
           />
         </TouchableOpacity>
 
         <Image
           source={require("../../assets/brainbuilding.png")}
           style={styles.schedule2}
+					resizeMode="contain"
         />
         <Image
           source={require("../../assets/brainbuildinginfo.png")}
           style={styles.schedule3}
+					resizeMode="contain"
         />
       </ScrollView>
     </View>

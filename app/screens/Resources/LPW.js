@@ -14,16 +14,19 @@ function LPW(){
           <Image
             source={require("../../assets/psp.png")}
             style={styles.schedule}
+						resizeMode="contain"
           />          
         </TouchableOpacity>
 
         <Image
           source={require("../../assets/ultimateguide.png")}
           style={styles.schedule2}
+					resizeMode="contain"
         />
         <Image
           source={require("../../assets/quiz.png")}
           style={styles.schedule3}
+					resizeMode="contain"
         />
       </ScrollView>
 
