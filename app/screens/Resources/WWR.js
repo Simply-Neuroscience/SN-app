@@ -14,6 +14,7 @@ function WWR(){
           <Image
             source={require("../../assets/aboutWWR.png")}
             style={styles.schedule}
+						resizeMode="contain"
           />          
         </TouchableOpacity>
 
@@ -21,6 +22,7 @@ function WWR(){
         <Image
           source={require("../../assets/howtostart.png")}
           style={styles.schedule2}
+					resizeMode="contain"
         />        
       </ScrollView>
 
